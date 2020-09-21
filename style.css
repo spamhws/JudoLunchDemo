@@ -8,6 +8,10 @@
   .header-container, .benefit-blocks, .about-us {
     margin-left: 16px;
   }
+
+  #ppc-pic {
+    display: none;
+  }
 }
 
 a {
@@ -21,7 +25,7 @@ ul {
 
 @font-face {
   font-family: 'Gordita Regular';
-  src: url('fonts/Gordita Regular.woff') format('woff');
+  src: url('fonts/Gordita Light.woff') format('woff');
 }
 
 @font-face {
@@ -264,7 +268,6 @@ header img {
   display: flex;
   text-align: center;
   margin-top: 36px;
-  margin-bottom: 36px;
 }
 
 #about-us-learn-more a{
@@ -353,11 +356,13 @@ header img {
 
 #bg-img3 {
   z-index: -1;
-  width: 1414px;
   position: absolute;
+  margin-top: -30px;
+  width: 1200px;
+  left: calc(50vw - 600px);
   text-align: center;
-  display: none;
 }
+
 
 .ppc-tool {
   padding-left: 32px;
@@ -366,16 +371,25 @@ header img {
   box-sizing: border-box;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
   border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  margin-top: 80px;
+  margin-bottom: 32px;
+  flex-grow: 3;
+  flex-shrink: 1;
 }
 
-.ppc-tool h1 {
+
+
+.ppc-header {
   font-family: 'Gordita Bold';
   font-size: 22px;
   line-height: 28px;
   margin: 32px 0 20px 0px;
 }
 
-#ppc-desc {
+.ppc-desc {
   width: 464px;
   height: 60px;
   font-size: 14px;
@@ -384,17 +398,17 @@ header img {
   margin: 0px 0px 28px 0px;
 }
 
-.ppc-tool h2 {
+
+.ppc-secondary-header {
   font-family: 'Gordita Medium';
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #333333;
-  margin: 0px 0px 20px 0px;
 }
 
-.features-list {
+.first-features-list {
   display: flex;
 
   /* justify-content: space-between; */
@@ -402,7 +416,7 @@ header img {
   width: 464px;
 }
 
-#rank-product, #liquidate, #launch-product, #maximize-profit {
+.first-features-list .feature-item {
   display: flex;
   align-items: center;
   width: 200px;
@@ -411,22 +425,94 @@ header img {
 
 }
 
-.features-list img {
+.first-features-list img {
   margin-right: 12px;
 }
 
-.features-list p {
+.first-features-list p {
   width: 132px;
   height: 20px;
   font-size: 14px;
   line-height: 20px;
   color: #4A4A4A;
+  /* white-space: nowrap; */
 }
 
 #ppc-pic {
   margin: 24px 40px 22px 0;
 }
 
-#ppc-learn-more-btn {
+.ppc-learn-more-btn {
+  margin-top: 28px;
+  /* margin-bottom: 32px; */
+  width: 232px;
+  height: 48px;
+  color: #FFFFFF;
+  background: #FF9900;
+  border-radius: 4px;
+  padding: auto 20px auto 20px;
+  display: flex;
+  justify-content: space-around;
+}
 
+.ppc-learn-more-btn a {
+  font-size: 16px;
+  color: #FFFFFF;
+  margin: auto 0px;
+}
+
+
+#three-in-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-grow: 3;
+  flex-shrink: 1;
+}
+
+
+
+.listing-managment, .launch-product-tool, .amazon-acc-managment {
+  padding: 32px;
+  background-color: #FFFFFF;
+  width: 320px;
+  height: 552px;
+  border: 1px solid #E7E9EB;
+  box-sizing: border-box;
+  /* box/shadow */
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.features-list {
+  display: flex;
+
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+}
+
+.features-list .feature-item {
+  display: flex;
+  align-items: center;
+
+}
+
+.features-list img {
+  margin-right: 12px;
+}
+
+.features-list p {
+  width: 220px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4A4A4A;
+  /* white-space: nowrap; */
+}
+
+#three-in-row .ppc-learn-more-btn {
+  align-self: flex-end;
 }
