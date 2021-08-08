@@ -25,7 +25,7 @@ ul {
 
 @font-face {
   font-family: 'Gordita Regular';
-  src: url('fonts/Gordita Light.woff') format('woff');
+  src: url('fonts/Gordita Normal.woff') format('woff');
 }
 
 @font-face {
@@ -42,6 +42,7 @@ body {
 .nav-container {
   background-color: #FFFFFF;
   position: fixed;
+  z-index: 10;
   top: 0px;
   left: 0px;
   right: 0px;
@@ -335,6 +336,7 @@ header img {
 
 .amazon-tools {
   margin-top: 160px;
+  margin-bottom: 80px;
 }
 
 .amazon-tools .wrapper {
@@ -365,14 +367,14 @@ header img {
 
 
 .ppc-tool {
-  padding-left: 32px;
+  padding: 32px;
   background: #FFFFFF;
   border: 1px solid #E7E9EB;
   box-sizing: border-box;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
   border-radius: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   max-width: 100%;
   margin-top: 80px;
   margin-bottom: 32px;
@@ -386,7 +388,7 @@ header img {
   font-family: 'Gordita Bold';
   font-size: 22px;
   line-height: 28px;
-  margin: 32px 0 20px 0px;
+  margin: 20px 0 20px 0px;
 }
 
 .ppc-tool .ppc-desc {
@@ -430,7 +432,7 @@ header img {
 }
 
 .first-features-list p {
-  width: 132px;
+  width: 152px;
   height: 20px;
   font-size: 14px;
   line-height: 20px;
@@ -439,7 +441,9 @@ header img {
 }
 
 #ppc-pic {
-  margin: 24px 40px 22px 0;
+  /* margin: 24px 40px 22px 0; */
+  width: 396px;
+  min-width: 150px;
 }
 
 .ppc-learn-more-btn {
@@ -450,30 +454,34 @@ header img {
   color: #FFFFFF;
   background: #FF9900;
   border-radius: 4px;
-  padding: auto 20px auto 20px;
+  padding: auto 30px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .ppc-learn-more-btn a {
+  font-weight: bold;
   font-size: 16px;
   color: #FFFFFF;
-  margin: auto 0px;
+  margin: auto 20px;
+}
+
+.ppc-learn-more-btn img {
+  margin: auto 20px;
 }
 
 
-#three-in-row {
+.three-in-row {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   flex-grow: 3;
   flex-shrink: 1;
+  grid-row-gap: 16px;
 }
 
-
-
-.listing-managment, .launch-product-tool, .amazon-acc-managment {
+.three-cards {
   padding: 32px;
   background-color: #FFFFFF;
   width: 320px;
@@ -521,6 +529,183 @@ header img {
   /* white-space: nowrap; */
 }
 
-#three-in-row .ppc-learn-more-btn {
+.three-in-row .ppc-learn-more-btn {
   align-self: flex-end;
+}
+
+.feedback {
+  overflow-x: hidden;
+  margin-bottom: 80px;
+}
+
+#bg-img4 {
+  z-index: -2;
+  position: absolute;
+  margin-top: -30px;
+  width: 1200px;
+  left: calc(50vw - 600px);
+  text-align: center;
+}
+
+#feedback-header {
+  width: 848px;
+  height: 300px;
+  text-align: center;
+  font-family: 'Gordita Bold';
+  font-size: 44px;
+  line-height: 56px;
+  background: -webkit-linear-gradient(#cfcfcf, #6e6d6d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 auto 20px auto;
+  padding-top: 120px;
+}
+
+.feedback-cards {
+  z-index: 0;
+  position: relative;
+  overflow-x: hidden;
+  height: 400px;
+  left: -8%;
+  width: 117%;
+  display: block;
+}
+
+.first-row, .second-row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.first-row {
+  position: relative;
+  left: -50%;
+}
+
+.second-row {
+  position: relative;
+  left: -300%;
+}
+
+.card {
+  min-width: 344px;
+  height: 156px;
+  display: flex;
+  background: white;
+  border: 1px solid #E7E9EB;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  flex-wrap: wrap;
+  padding: 24px;
+  grid-gap: 12px;
+  margin: 12px;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #4A4A4A;
+  margin-bottom: 8px;
+}
+
+.card img ~ p {
+  color: #888888;
+}
+
+.card img {
+  height: 28px;
+  width: auto;
+
+}
+
+#bg-img5 {
+  z-index: -2;
+  position: absolute;
+  margin-top: -30px;
+  width: 1200px;
+  left: calc(50vw - 600px);
+  text-align: center;
+}
+
+#solutions-header {
+  width: 600px;
+  height: 160px;
+  text-align: center;
+  font-family: 'Gordita Bold';
+  font-size: 44px;
+  line-height: 56px;
+  margin: 0 auto 30px auto;
+  padding-top: 0px;
+}
+
+.solutions .three-cards {
+  width: 320px;
+  height: 656px;
+  align-content: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.solutions .ppc-learn-more-btn {
+  margin-top: auto;
+  width: 100%;
+}
+
+.blue-btn {
+  background-color: #68C3DE;
+}
+
+.purple-btn {
+  background-color: #8B3ACA;
+}
+
+.green-btn {
+  background-color: #2DC5C5;
+}
+
+.solutions {
+  margin-bottom: 80px;
+}
+
+.solutions-secondary-header {
+  font-family: 'Gordita Bold';
+  font-size: 22px;
+  line-height: 28px;
+  margin: 12px 0 24px 0px;
+  width: 256px;
+}
+
+.solutions-desc {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.solutions-ic {
+  width: 60px;
+  height: 60px;
+  text-align: left;
+}
+
+.benefits-list {
+  margin-top: 38px;
+  max-height: 200px;
+}
+
+.benefits-list img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.benefit-item {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4A4A4A;
+  margin-bottom: 20px;
+}
+
+.benefit-item p {
+  max-width: 228px;
 }
