@@ -561,6 +561,10 @@ header img {
   padding-bottom: 80px;
 }
 
+.feedback .wrapper {
+  max-width: 80%;
+}
+
 #feedback-header {
   width: 848px;
   height: 300px;
@@ -589,12 +593,12 @@ header img {
 
 .first-row {
   position: relative;
-  left: -50%;
+  left: -250%;
 }
 
 .second-row {
   position: relative;
-  left: -400%;
+  left: -300%;
 }
 
 .card {
