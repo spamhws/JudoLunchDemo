@@ -4,6 +4,10 @@
   padding: 0px;
 }
 
+body > section {
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+}
+
 @media all and (max-width: 1024px) {
   .header-container, .benefit-blocks, .about-us {
     margin-left: 16px;
@@ -149,7 +153,8 @@ nav {
 .header-container {
   /* display: flex;
   text-align: left; */
-  margin-top: calc(136px + 80px);
+  padding-top: 260px;
+  padding-bottom: 120px;
 }
 
 .header-container h1 {
@@ -191,7 +196,7 @@ header img {
 
 .benefit-blocks {
   text-align: left;
-  margin-top: 176px;
+  padding-bottom: 80px;
 }
 
 .benefit-blocks .wrapper {
@@ -225,14 +230,16 @@ header img {
 
 .amazon-tools {
   overflow-x: hidden;
-  margin-bottom: 80px;
   background-image: url("src/bg-pic3.svg");
   background-repeat: no-repeat;
+  /* background-position: center; */
+  background-attachment: fixed;
   background-size: cover;
 }
 
 .about-us{
-  margin-top: 160px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .about-us h1{
@@ -345,8 +352,8 @@ header img {
 }
 
 .amazon-tools {
-  margin-top: 160px;
-  margin-bottom: 80px;
+  padding-top: 160px ;
+  padding-bottom: 80px ;
 }
 
 .amazon-tools .wrapper {
@@ -545,11 +552,13 @@ header img {
 
 .feedback {
   overflow-x: hidden;
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
   background-image: url("src/bg-pic4.svg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-position: center;
+  /* background-attachment: fixed; */
   background-size: cover;
+  padding-bottom: 80px;
 }
 
 #feedback-header {
@@ -567,7 +576,7 @@ header img {
   z-index: 0;
   position: relative;
   overflow-x: hidden;
-  height: 400px;
+  /* height: 400px; */
   left: -8%;
   width: 117%;
   display: block;
@@ -585,7 +594,7 @@ header img {
 
 .second-row {
   position: relative;
-  left: -300%;
+  left: -400%;
 }
 
 .card {
@@ -607,27 +616,48 @@ header img {
   font-size: 14px;
   line-height: 20px;
   color: #4A4A4A;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
+}
+
+.feedback-quote {
+  position: relative;
+  width: 100%;
+  height: 65%;
 }
 
 .card img ~ p {
   color: #888888;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .card img {
+  border-radius: 50%;
   height: 28px;
   width: auto;
 
 }
 
-#bg-img5 {
+.solutions {
+  overflow-x: hidden;
+  /* margin-bottom: 80px; */
+  background-image: url("src/bg-pic5.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* #bg-img5 {
   z-index: -2;
   position: absolute;
   margin-top: -30px;
   width: 1200px;
   left: calc(50vw - 600px);
   text-align: center;
-}
+} */
 
 #solutions-header {
   width: 600px;
@@ -663,10 +693,6 @@ header img {
 
 .green-btn {
   background-color: #2DC5C5;
-}
-
-.solutions {
-  margin-bottom: 80px;
 }
 
 .solutions-secondary-header {
@@ -820,13 +846,13 @@ header img {
   color: #888888;
 }
 
-#bg-img6 {
+/* #bg-img6 {
   z-index: -2;
   position: absolute;
   width: 1200px;
   left: calc(50vw - 600px);
   text-align: center;
-}
+} */
 
 .subscribtion {
   height: 646px;
@@ -838,6 +864,7 @@ header img {
 }
 
 .try-ppc {
+  padding: 20px;
   display: flex;
   text-align: left;
   width: 496px;
@@ -933,7 +960,7 @@ footer {
 
 .footer-main img {
   position: relative;
-  align
+  margin-bottom: 8px;
 }
 
 .products ul, .packages ul, .more ul{
